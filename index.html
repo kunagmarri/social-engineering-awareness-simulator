@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CyberAware v3 — Realistic social engineering awareness simulator. Not all messages are scams. Think, analyze, decide, and learn.">
+  <title>CyberAware — Realistic Threat Simulator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="navbar-brand"><span class="brand-icon">🛡️</span> CyberAware</a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="#simulator">Simulator</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#badges">Badges</a></li>
+        <li><a href="#persona" class="nav-cta" id="navStartBtn">Start Training</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer-banner">
+    <div class="container disclaimer-inner">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <span>Safe simulation environment. No real data collected. Not all scenarios are threats — think before acting.</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span> Realistic Cybersecurity Training</div>
+        <h1>Think Before You<br><span class="accent-text">Click, Report, or Trust</span></h1>
+        <p>Not all messages are scams. Not all answers are the same. Train your instincts against real-world social engineering — where the right action varies every time.</p>
+        <div class="hero-actions">
+          <a href="#persona" class="btn btn-primary btn-lg" id="heroStartBtn"><span class="btn-icon">▶</span> Start Simulation</a>
+          <a href="#learn" class="btn btn-secondary btn-lg">How It Works</a>
+        </div>
+        <div class="hero-pillars">
+          <span class="pillar">🤔 Ambiguous scenarios</span>
+          <span class="pillar">⚖️ 4 action choices</span>
+          <span class="pillar">🎯 Anti-report-spam</span>
+          <span class="pillar">📊 Behavior tracking</span>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-number">3.4B</div><div class="stat-label">Phishing emails daily</div></div>
+        <div class="stat-item"><div class="stat-number">91%</div><div class="stat-label">Attacks start with email</div></div>
+        <div class="stat-item"><div class="stat-number">30%</div><div class="stat-label">Messages are legitimate</div></div>
+        <div class="stat-item"><div class="stat-number">$4.9M</div><div class="stat-label">Avg. breach cost</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="how-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🎮 How It Works</div>
+        <h2>Think → Analyze → Decide → Learn</h2>
+        <p>This is not a "click report to win" simulator. Every scenario requires real judgment.</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-card"><div class="how-num">1</div><div class="how-icon">👁️</div><h3>Read the Scenario</h3><p>An email, SMS, WhatsApp message, or call arrives. Read carefully — not all are threats.</p></div>
+        <div class="how-card"><div class="how-num">2</div><div class="how-icon">🤔</div><h3>Choose Your Action</h3><p>Pick from 4 options: Report, Ignore, Verify Source, or Proceed. Buttons are shuffled every time.</p></div>
+        <div class="how-card"><div class="how-num">3</div><div class="how-icon">🎯</div><h3>State Your Confidence</h3><p>Are you Low, Medium, or High confidence? Being certain and wrong costs more points.</p></div>
+        <div class="how-card"><div class="how-num">4</div><div class="how-icon">📊</div><h3>Get Smart Feedback</h3><p>See the scenario reveal (Real or Scam), why your decision was right or wrong, and what to do next time.</p></div>
+      </div>
+      <div class="action-legend">
+        <h3>The 4 Actions Explained</h3>
+        <div class="action-legend-grid">
+          <div class="action-legend-item report"><span class="action-icon-lg">🚩</span><strong>Report Suspicious</strong><p>Flag the message/call as a threat. Best for clear scams. Wrong for safe messages.</p></div>
+          <div class="action-legend-item ignore"><span class="action-icon-lg">🚫</span><strong>Ignore</strong><p>Delete without acting. Often acceptable. May miss real messages.</p></div>
+          <div class="action-legend-item verify"><span class="action-icon-lg">🔍</span><strong>Verify Source</strong><p>Check authenticity independently before acting. Best for ambiguous cases.</p></div>
+          <div class="action-legend-item proceed"><span class="action-icon-lg">✅</span><strong>Proceed Carefully</strong><p>Trust and act on the message. Right for legitimate messages. Wrong for scams.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONA SELECTION -->
+  <section id="persona" class="persona-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🎯 Step 1: Your Profile</div>
+        <h2>Choose Your Role</h2>
+        <p>We customize scenarios to match real threats you face in your daily life.</p>
+      </div>
+      <div class="persona-grid" id="personaGrid">
+        <div class="persona-card" data-persona="student" id="personaStudent">
+          <div class="persona-icon">🎓</div>
+          <h3>Student</h3>
+          <p>Scholarship scams, fake university emails, social media phishing, and academic fraud.</p>
+        </div>
+        <div class="persona-card" data-persona="employee" id="personaEmployee">
+          <div class="persona-icon">💼</div>
+          <h3>Employee</h3>
+          <p>CEO fraud, fake HR notices, BEC attacks, and corporate credential phishing.</p>
+        </div>
+        <div class="persona-card" data-persona="shopper" id="personaShopper">
+          <div class="persona-icon">🛒</div>
+          <h3>Online Shopper</h3>
+          <p>Delivery scams, fake payment alerts, refund tricks, and deal-of-the-day traps.</p>
+        </div>
+      </div>
+
+      <!-- DIFFICULTY SELECTION -->
+      <div id="difficultySection" class="hidden" style="margin-top:40px">
+        <div class="section-header" style="margin-bottom:20px">
+          <div class="section-label">🎯 Step 2: Difficulty</div>
+          <h2>Choose Your Challenge Level</h2>
+        </div>
+        <div class="diff-grid">
+          <div class="diff-card" data-difficulty="easy" id="diffEasy">
+            <div class="diff-icon">🌱</div>
+            <h3>Easy</h3>
+            <p>Obvious scams, clear red flags, and easy-to-spot phishing. Good for first-timers.</p>
+            <span class="diff-badge easy">Easy</span>
+          </div>
+          <div class="diff-card" data-difficulty="medium" id="diffMedium">
+            <div class="diff-icon">🔥</div>
+            <h3>Medium</h3>
+            <p>Mixed signals, ambiguous messages, requires thinking. Real-world simulation.</p>
+            <span class="diff-badge medium">Medium</span>
+          </div>
+          <div class="diff-card" data-difficulty="hard" id="diffHard">
+            <div class="diff-icon">💀</div>
+            <h3>Hard</h3>
+            <p>Near-perfect impersonation, subtle domain tricks, no obvious urgency. For experts.</p>
+            <span class="diff-badge hard">Hard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULATOR -->
+  <section id="simulator" class="hidden">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🧪 Interactive Simulator</div>
+        <h2>Test Your Judgment</h2>
+        <p>Not all messages are threats. Use all 4 actions wisely — blind reporting is penalized.</p>
+      </div>
+
+      <!-- Daily Challenge -->
+      <div class="daily-challenge-banner" id="dailyChallenge">
+        <div class="daily-challenge-left">
+          <div class="daily-icon">🎯</div>
+          <div>
+            <h3 id="dailyChallengeTitle">Today's Challenge</h3>
+            <p id="dailyChallengeDesc">Make the right call on 5 scenarios</p>
+          </div>
+        </div>
+        <div>
+          <div class="daily-progress-bar"><div class="daily-progress-fill" id="dailyProgressFill" style="width:0%"></div></div>
+          <div class="daily-label" id="dailyLabel">0 / 5</div>
+        </div>
+      </div>
+
+      <!-- Adaptive mode indicator -->
+      <div id="adaptiveAlert" class="adaptive-alert hidden">
+        <span id="adaptiveMsg">🧠 Adaptive mode active — adjusting difficulty based on your behavior</span>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs-container" id="simTabs">
+        <button class="tab-btn active" data-tab="phishing" id="tabPhishing"><span class="tab-icon">📧</span> Phishing <span class="tab-badge pending" id="badgePhishing">3</span></button>
+        <button class="tab-btn" data-tab="smishing" id="tabSmishing"><span class="tab-icon">📱</span> Smishing <span class="tab-badge pending" id="badgeSmishing">3</span></button>
+        <button class="tab-btn" data-tab="whatsapp" id="tabWhatsapp"><span class="tab-icon">💬</span> WhatsApp <span class="tab-badge pending" id="badgeWhatsapp">2</span></button>
+        <button class="tab-btn" data-tab="vishing" id="tabVishing"><span class="tab-icon">📞</span> Vishing <span class="tab-badge pending" id="badgeVishing">2</span></button>
+      </div>
+
+      <!-- PHISHING PANEL -->
+      <div class="sim-panel active" id="panelPhishing">
+        <div class="scenario-nav">
+          <span class="scenario-counter" id="phishingCounter">Scenario 1 of 3</span>
+          <div class="scenario-dots" id="phishingDots"></div>
+        </div>
+        <div class="sim-card email-sim" id="phishingCard"></div>
+      </div>
+
+      <!-- SMISHING PANEL -->
+      <div class="sim-panel" id="panelSmishing">
+        <div class="scenario-nav">
+          <span class="scenario-counter" id="smishingCounter">Scenario 1 of 3</span>
+          <div class="scenario-dots" id="smishingDots"></div>
+        </div>
+        <div class="sim-card sms-sim" id="smishingCard"></div>
+      </div>
+
+      <!-- WHATSAPP PANEL -->
+      <div class="sim-panel" id="panelWhatsapp">
+        <div class="scenario-nav">
+          <span class="scenario-counter" id="whatsappCounter">Scenario 1 of 2</span>
+          <div class="scenario-dots" id="whatsappDots"></div>
+        </div>
+        <div class="sim-card wa-sim" id="whatsappCard"></div>
+      </div>
+
+      <!-- VISHING PANEL -->
+      <div class="sim-panel" id="panelVishing">
+        <div class="scenario-nav">
+          <span class="scenario-counter" id="vishingCounter">Scenario 1 of 2</span>
+          <div class="scenario-dots" id="vishingDots"></div>
+        </div>
+        <div class="sim-card call-sim" id="vishingCard"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="results-section hidden">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">📊 Your Results</div>
+        <h2>Decision Analysis</h2>
+        <p>Here's how you performed — and what your choices reveal about your security instincts.</p>
+      </div>
+      <div class="results-grid">
+        <div class="score-card" id="scoreCard">
+          <div class="score-ring-container">
+            <svg class="score-ring" viewBox="0 0 180 180">
+              <circle class="score-ring-bg" cx="90" cy="90" r="80"/>
+              <circle class="score-ring-fill" id="scoreRingFill" cx="90" cy="90" r="80"/>
+            </svg>
+            <div class="score-value">
+              <div class="score-number" id="scoreNumber">0</div>
+              <div class="score-total">/ 100</div>
+            </div>
+          </div>
+          <div class="score-label">Awareness Score</div>
+          <div class="score-level" id="scoreLevel"><span>—</span></div>
+          <div class="risk-indicator" id="riskIndicator"></div>
+        </div>
+        <div class="feedback-list-card">
+          <h3>Decision Log</h3>
+          <div class="feedback-items" id="feedbackList"></div>
+        </div>
+      </div>
+
+      <!-- Behavior Dashboard -->
+      <div class="behavior-dashboard-card" style="margin-top:20px">
+        <h3>🧠 Behavior Dashboard</h3>
+        <div id="behaviorDashboard"></div>
+      </div>
+
+      <!-- Psych Analysis + Learning -->
+      <div class="psych-grid" style="margin-top:20px">
+        <div class="psych-card">
+          <h3>🧠 Psychological Influence Analysis</h3>
+          <p style="margin-bottom:16px;font-size:0.85rem">Tactics that influenced your wrong decisions.</p>
+          <div class="influence-bars" id="influenceBars"></div>
+        </div>
+        <div class="psych-card">
+          <h3>🎓 Learning Mode</h3>
+          <p style="margin-bottom:16px;font-size:0.85rem">Step-by-step breakdown of your worst mistake.</p>
+          <div id="learnModeContent"></div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:24px">
+        <button class="btn btn-primary" onclick="resetSimulation()">🔄 Restart Simulation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="learn">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🎓 Education</div>
+        <h2>Know the Threats</h2>
+        <p>Understanding social engineering attacks — and legitimate messages — is your first line of defense.</p>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card phishing"><div class="edu-icon">📧</div><h3>Phishing</h3><p>Email scams mimicking trusted organizations. Key: check the sender domain carefully.</p><span class="edu-link">Learn to identify →</span></div>
+        <div class="edu-card smishing"><div class="edu-icon">📱</div><h3>Smishing & WhatsApp</h3><p>SMS and messaging scams with malicious links. Real services rarely send urgent payment links via SMS.</p><span class="edu-link">Learn to identify →</span></div>
+        <div class="edu-card vishing"><div class="edu-icon">📞</div><h3>Vishing</h3><p>Phone-based social engineering. Banks and IT will NEVER ask for OTPs or passwords over the phone.</p><span class="edu-link">Learn to identify →</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPS -->
+  <section id="tips">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🧠 Smart Tips</div>
+        <h2>The Real Rules</h2>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">🔍</div><div><h4>Check Sender Domains</h4><p>Verify the full email address. "amaz0n.com" ≠ "amazon.com". Look for subtle typos.</p></div></div>
+        <div class="tip-card"><div class="tip-icon">⚖️</div><div><h4>Not All Messages Are Scams</h4><p>Real alerts, delivery notifications, and bank messages exist. Use Verify before acting on them.</p></div></div>
+        <div class="tip-card"><div class="tip-icon">🔍</div><div><h4>Verify Independently</h4><p>Never use links in the suspect message. Go directly to the official website or call a known number.</p></div></div>
+        <div class="tip-card"><div class="tip-icon">⏰</div><div><h4>Urgency Is a Tactic</h4><p>"Act now" and "Account blocked" are pressure tactics. Slow down — legitimate issues can wait for verification.</p></div></div>
+        <div class="tip-card"><div class="tip-icon">🔒</div><div><h4>Never Share OTPs</h4><p>No legitimate organization will ever ask for your OTP, PIN, or password via any channel.</p></div></div>
+        <div class="tip-card"><div class="tip-icon">⚠️</div><div><h4>Over-Reporting Is Harmful</h4><p>Reporting legitimate messages causes alert fatigue, wasting security team resources. Verify first.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESS -->
+  <section id="progress">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">📈 Progress</div>
+        <h2>Your Journey</h2>
+        <p>Track how your decision-making improves over time.</p>
+      </div>
+      <div class="results-grid">
+        <div class="progress-card" id="progressCard">
+          <div class="progress-header"><h3>Score History</h3><span class="scenario-counter" id="attemptCount">0 attempts</span></div>
+          <div class="progress-chart" id="progressChart"></div>
+          <div class="progress-improvement hidden" id="progressImprovement"><span>📈</span><span id="improvementText">Your awareness is improving!</span></div>
+        </div>
+        <div class="leaderboard-card" id="leaderboardCard">
+          <div class="leaderboard-header"><h3>🏆 Leaderboard</h3><span class="scenario-counter">Top Defenders</span></div>
+          <div class="leaderboard-list" id="leaderboardList"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BADGES -->
+  <section id="badges" class="gamification-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🎮 Achievements</div>
+        <h2>Level & Badges</h2>
+        <p>Earn badges for smart decisions. Warning badges show behavioral risks to fix.</p>
+      </div>
+      <div class="badges-level-row" id="levelRow">
+        <div class="level-display">
+          <div class="level-icon" id="levelIcon">🌱</div>
+          <div><div class="level-name" id="levelName">Beginner</div><div class="level-subtitle" id="levelSubtitle">Complete simulations to level up</div></div>
+        </div>
+        <div class="xp-bar-container">
+          <div class="xp-label" id="xpLabel">0 / 100 XP</div>
+          <div class="xp-track"><div class="xp-fill" id="xpFill" style="width:0%"></div></div>
+        </div>
+      </div>
+      <div class="badges-grid" id="badgesGrid"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-text">© 2026 CyberAware — Realistic Threat Simulator. No real data collected.</span>
+      <ul class="footer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#simulator">Simulator</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#progress">Progress</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- FEEDBACK OVERLAY (Confidence + Result) -->
+  <div class="feedback-overlay" id="feedbackOverlay">
+    <div class="feedback-card" id="feedbackCard"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
